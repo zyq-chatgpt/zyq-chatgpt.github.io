@@ -20,21 +20,52 @@
             height: 100%;
             overflow: hidden;
         }
+
+        #box {
+            position: fixed;
+            left: 20px;
+            top: 40%;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotate {
+            animation: rotate 2s linear infinite;
+            width: 30px;
+        }
+
+        a {
+            font-weight: 900;
+            color: #f66;
+            font-size: 24px;
+        }
     </style>
     <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?b6745fb805876bbb78050390270e4c47";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b6745fb805876bbb78050390270e4c47";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 
 </head>
 
 <body>
     <iframe src="https://ngpt.nicoku.net/" frameborder="0"></iframe>
+    <div id="box">
+        <img src="https://zyq-chatgpt.github.io/icon.svg" class="rotate" alt="">
+        <a href="https:ai.zhaoyeqing.cn" target="_blank">更多 Chatgpt 镜像</a>
+    </div>
 </body>
 
 <script>
