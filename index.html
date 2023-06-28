@@ -24,8 +24,16 @@
         #box {
             display: none;
             position: fixed;
-            left: 20px;
+            left: 120px;
             top: 40%;
+        }
+
+        #box1 {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -40px;
+            margin-top: -40px;
         }
 
         @keyframes rotate {
@@ -41,6 +49,10 @@
         .rotate {
             animation: rotate 2s linear infinite;
             width: 30px;
+        }
+        .rotate1 {
+            animation: rotate 1.5s linear infinite;
+            width:80px;
         }
 
         a {
@@ -59,6 +71,8 @@
         })();
 
         function showBox() {
+            var box = document.getElementById("box1");
+            box.style.display = "none";
             var box = document.getElementById("box");
             box.style.display = "block";
         }
@@ -71,6 +85,9 @@
     <div id="box">
         <img src="https://zyq-chatgpt.github.io/icon.svg" class="rotate" alt="">
         <a href="https://ai.zhaoyeqing.cn" target="_blank">更多 Chatgpt 镜像</a>
+    </div>
+    <div id="box1">
+        <img src="https://zyq-chatgpt.github.io/icon.svg" class="rotate1" alt="">
     </div>
 </body>
 </html>
